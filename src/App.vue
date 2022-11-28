@@ -63,7 +63,7 @@ const isLoading = computed({
       </div>
       <div class="flex flex-col gap-5">
         <ToDoCard
-          class="w-10/12 sm:w-64 mx-auto opacity-40"
+          class="w-10/12 sm:w-64 mx-auto grayscale line-through"
           v-for="item in store.getters.DONE_TODOS"
           :key="item.title"
           :item="item"
