@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Pivate-Things-ToDo/sw.js', { scope: '/Pivate-Things-ToDo/' })})}
