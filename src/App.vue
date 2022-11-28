@@ -29,6 +29,8 @@ const isLoading = computed({
     <h1 class="text-3xl">Private Things ToDo.</h1>
   </div>
 
+  <ToDoCreateForm v-if="!isLoading" class="w-10/12 sm:w-64 mx-auto mb-10" />
+
   <div
     class="flex flex-col md:flex-row w-full justify-center align-content-center gap-10"
   >
@@ -51,7 +53,6 @@ const isLoading = computed({
       <span class="sr-only">Loading...</span>
     </div>
     <template v-if="!isLoading">
-      <ToDoCreateForm class="w-10/12 sm:w-64 mx-auto" />
       <div class="flex flex-col gap-5">
         <ToDoCard
           class="w-10/12 sm:w-64 mx-auto"
